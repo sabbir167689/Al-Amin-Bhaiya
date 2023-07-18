@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    max-width: 250px;
+    text-transform: uppercase;
+}
+h3::after{
+    position: absolute;
+    height: 4px;
+    width: 70px;
+    background: red;
+    content: "";
+    left: 0;
+    top: 50%;
+}
+h3::before{
+    position: absolute;
+    height: 4px;
+    width: 70px;
+    background: rgb(60, 255, 0);
+    content: "";
+    right: 0;
+    top: 50%;
+}
+span::after{
+    position: absolute;
+    height: 70px;
+    width: 4px;
+    background: rgb(38, 25, 224);
+    content: "";
+    top: 40px;
+    right: 50%;
+}
+span::before{
+    position: absolute;
+    height: 70px;
+    width: 4px;
+    background: rgb(217, 227, 18);
+    content: "";
+    bottom: 40px;
+    right: 50%;
+}
